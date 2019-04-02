@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .container {
+      background-color: #c29e9e;
+      width: 400px;
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+      /* 要隐藏超出的部分,使用overflow:hidden */
+
+    }
+
+    .radious1 {
+      background-color: yellow;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      position: absolute;
+      top: -40px;
+      left: -40px;
+
+    }
+
+    .radious2 {
+      background-color: yellow;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      position: absolute;
+      top: 160px;
+      left: 360px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="radious1"></div>
+    <div class="radious2"></div>
+
+  </div>
+</body>
+
+</html>
