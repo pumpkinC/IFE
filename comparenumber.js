@@ -1,4 +1,0 @@
-let max=(strnum)=>{
-    strnum
-
-}
