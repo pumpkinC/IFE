@@ -1,0 +1,4 @@
+let max=(strnum)=>{
+    strnum
+
+}
