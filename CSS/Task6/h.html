@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>报纸</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            background-color: #e7e7e7;
+            font-size: 10px;
+        }
+
+        .paper {
+            width: 720px;
+            height: 1030px;
+            background-color: #fff;
+            margin: 0 auto;
+        }
+
+        .top {
+            width: 650px;
+            height: 45px;
+            display: flex;
+            margin-left: 33px;
+
+        }
+
+        .top-left {
+            width: 80px;
+            height: 100%;
+            background-color: #d15f5a;
+            color: white;
+            position: relative;
+        }
+
+        .top-left-title {
+            position: absolute;
+            bottom: 0;
+            left: 22%;
+        }
+
+        .top-right {
+            flex: 1;
+            height: 99%;
+            border-bottom: 0.5px solid gray;
+            position: relative;
+        }
+
+        .top-right-date {
+            color: #f5cdd0;
+            font-size: 6px;
+            width: 70px;
+            height: 20px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            line-height: 29px;
+        }
+
+        .middle {
+            margin-top: 33px;
+            display: flex;
+        }
+
+        .middle img {
+            margin-left: 33px;
+        }
+
+        .middle-left {
+            width: 466px;
+        }
+
+        .middle-left img {
+            width: 466px;
+        }
+
+        .middle-right {
+            flex: 1;
+            height: 220px;
+            margin-left: 33px;
+            margin-right: 37px;
+        }
+
+        .middle-right-text {
+            font-size: 20px;
+            margin-left: 39px;
+            border-top: 0.5px solid gray;
+            text-align: left;
+
+        }
+
+        .middle-right-text-top {
+            margin-top: 5px;
+            text-decoration: underline;
+        }
+
+        .middle-right-text span {
+            font-size: 5px;
+            line-height: 10px;
+        }
+
+        .middle-right-text-middle {
+            color: aqua;
+            font-size: 60px;
+            font-style: italic;
+        }
+
+        .middle-right-text-bottom {
+            color: rgb(235, 74, 11);
+            font-size: 25px;
+        }
+
+        .middle-right-text-bottom span {
+            color: rgb(235, 74, 11);
+            display: inline-block;
+
+        }
+
+        .content {
+            display: flex;
+            width: 500px;
+            height: 155px;
+            margin-top: 33px;
+        }
+
+        .content1 {
+            width: 168px;
+            height: 100%;
+            margin-left: 33px;
+        }
+
+        .content1 a {
+            color: green;
+        }
+
+        .content2 {
+            margin-left: 20px;
+            width: 150px;
+            height: 100%;
+        }
+
+        .content2 a {
+            color: orange;
+        }
+
+        .content3 {
+            flex: 1;
+            margin-left: 20px;
+            height: 100%;
+            position: relative;
+        }
+
+        .content3 a {
+            color: red;
+        }
+
+        .bottom {
+            margin: 0 auto;
+            margin-top: 33px;
+            width: 657px;
+            height: 480px;
+            display: flex;
+
+        }
+
+        .bottom-left {
+            width: 50%;
+        }
+
+        .bottom-left-the {
+            font-style: italic;
+            font-size: 40px;
+            color: yellow;
+        }
+
+        .bottom-left-tec {
+            font-size: 30px;
+            color: #436dfe;
+        }
+
+        .bottom-left-qian {
+            font-size: 40px;
+            float: left;
+            color: yellow;
+        }
+
+        .bottom-left img {
+            float: right;
+        }
+
+        .bottom-right {
+            flex: 1;
+            margin-left: 15px;
+        }
+
+        .bottom-right-bottom {
+            margin-top: 30px;
+            background-color: #edefd5;
+            width: 330px;
+            height: 261px;
+        }
+
+        .bottom-right-bottom li {
+            height: 40px;
+            list-style: square;
+        }
+
+        .bottom-right-bottom-left {
+            width: 190px;
+            height: 130px;
+            background-color: #d3615c;
+            text-align: center;
+            position: relative;
+        }
+
+        .bottom-right-bottom-left-text {
+            position: absolute;
+            top: 30%;
+            display: flex;
+            align-items: center;
+        }
+
+        .bottom-right-bottom-left-0 {
+            font-size: 35px;
+            color: white;
+        }
+
+        .bottom-right-bottom-left-num {
+            font-size: 12px;
+            display: inline-block;
+            color: white;
+        }
+
+        .bottom-right-bottom-right {
+            flex: 1;
+            height: 130px;
+            text-align: center;
+            position: relative;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="paper">
+        <div class="top">
+            <div class="top-left">
+                <div class="top-left-title">看不清字</div>
+            </div>
+            <div class="top-right">
+                <div class="top-right-date">2019/04/08</div>
+            </div>
+
+        </div>
+        <div class="middle">
+            <div class="middle-left">
+                <img src="./a.png" alt="背景图片">
+            </div>
+            <div class="middle-right">
+                <div class="middle-right-text">
+                    <div>
+                        ABOUT
+                        <br>
+                        TECHNOLOGY
+                    </div>
+                    <span>离离原上草一岁一枯荣野火烧不尽春风吹又生</span>
+                    <div class="middle-right-text-middle">
+                        700
+                    </div>
+                    <div class="middle-right-text-bottom">
+                        3.2
+                        <span>CSS <br>123</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="content1">
+                <a href="#">What</a>
+                <br>
+                人生若只如初见，何事秋风悲画扇.曾经沧海难为水，除却巫山不是云.
+                明月几时有？把酒问青天人生若只如初见，何事秋风悲画扇。 —— 纳兰性德《木兰词·拟古决绝词柬友》
+                曾经沧海难为水，除却巫山不是云。 —— 元稹《离思五首·其四》
+
+            </div>
+            <div class="content2">
+                <a href="#">When</a>
+                <br>
+                人生若只如初见，何事秋风悲画扇.曾经沧海难为水，除却巫山不是云.
+                明月几时有？把酒问青天人生若只如初见，何事秋风悲画扇。 —— 纳兰性德《木兰词·拟古决绝词柬友》
+                曾经沧海难为水，除却巫山不是云。
+
+            </div>
+            <div class="content3">
+                <a href="#">How</a>
+                <br>
+                曾经沧海难为水，除却巫山不是云。
+                <br>
+                <div>
+                    <br>
+                    <br>
+                    What-----20% <br>
+                    How------30% <br>
+                    When-----50% <br>
+                </div>
+
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom-left">
+                <span class="bottom-left-the">THE</span>
+                <br>
+                <div class="bottom-left-tec">
+                    TECHNOLOGE OF <br>
+                    FRONT <br>
+                    前端技术领域
+                </div>
+                <hr>
+                <div class="bottom-left-qian">前</div>
+                人生若只如初见，何事秋风悲画扇.曾经沧海难为水，除却巫山不是云.
+                明月几时有？把酒问青天人生若只如初见，何事秋风悲画扇。 —— 纳兰性德《木兰词·拟古决绝词柬友》
+                曾经沧海难为水，除却巫山不是云。 <img src="./b.png" alt="left"> 元稹《离思五首·其四》明月几时有？把酒问青天人生若只如初见，何事秋风悲画扇。 ——
+                纳兰性德《木兰词·拟古决绝词柬友》
+                曾经沧海难为水，除却巫山不是云。 元稹《离思五首·其四》明月几时有？把酒问青天人生若只如初见，何事秋风悲画扇。 —— 纳兰性德《木兰词·拟古决绝词柬友》
+                曾经沧海难为水，除却巫山不是云。 元稹《离思五首·其四》明月几时有？把酒问青天人生若只如初见，何事秋风悲画扇。 —— 纳兰性德《木兰词·拟古决绝词柬友》
+                曾经沧海难为水，除却巫山不是云。 元稹《离思五首·其四》
+
+            </div>
+            <div class="bottom-right">
+                <div class="bottom-right-img">
+                    <img src="./c.png" alt="right">
+                </div>
+                <div class="bottom-right-bottom">
+                    <ul>
+                        <li>前端xxxxxxxxxx---xxxx</li>
+                        <li>前端xxxxxxxxxx---xxxxxx</li>
+                        <li>前端xxxxxxxxxx---xxxxxxxxx</li>
+                    </ul>
+                    <div style="display:flex">
+                        <div class="bottom-right-bottom-left">
+                            <div class="bottom-right-bottom-left-text">
+                                <div class="bottom-right-bottom-left-0">0|</div>
+                                <div class="bottom-right-bottom-left-num">ONE TWO <br> THREE FOUR <br>FIVE</div>
+                            </div>
+
+                        </div>
+                        <div class="bottom-right-bottom-right">
+                            <div style="float:left;font-size: 30px;line-height: 20px;">"</div>
+                            aaaaaabbbbbccccdadsaDSASDAds
+
+                            cdddddeeeeefffffaSDdsaSDdasdsafsaf
+
+                            dsdadadadadssdfasdfsas
+                            <div style="float:right;font-size: 30px;">"</div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
