@@ -2,77 +2,78 @@
 <html>
 
 <head>
-        <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-       <title>task3</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="icss.css" type="text/css">
+    <title>task3</title>
     <style>
         .box {
-          
+
             background-color: #eee;
-            padding: 20px 20px;
-           
-            border: 1px solid;
-            position: relative;
-            min-height: 600px;
-            min-width: 900px;
-           
+            margin：20px;
+            width: 100%;
+            height: 400px;
+            display: flex;
         }
 
         .box .left {
-                      background-color: white;
+            margin: 20px;
+            background-color: white;
             width: 200px;
-            height:300px;
-            position: absolute;
-            border: 1 solid white;
+            height: 100px;
         }
 
         .box .left>span {
             float: right;
         }
-
+        .box .left>img {
+            margin-left:50px;
+        }
         .box .center {
-            border: 1 solid white;
-           
-            position: relative;
+            flex: 1;
+            height: 300px;
+            margin: 20px;
             background-color: white;
-            height: 500px;
-            text-align:center;
 
         }
 
         .box .right {
-            width: 300px;
-            margin: 10px;            
-            position: absolute;
+            width: 150px;
+            height:300px;
+            margin: 20px;
             background-color: white;
-            border: 1 solid white;
-            float: right;
-            }
 
-        .box .right>ul li{
+
+        }
+
+        .box .right>ul li {
             margin-bottom: 15px;
             list-style: none;
-           
-            
         }
-       
-           </style>
+    </style>
 </head>
 
 <body>
     <div class="box">
-    <div class="left">
-        <img src="星空.jpg" alt="星空" width="60px" height="60px" /><span>团队名称</span>
+        <div class="left">
+            
+            <img src="星空.jpg" alt="星空" width="60px" height="60px" />
+            <span>团队名称</span>
+        </div>
+        <div class="center">
+            <h1>什么队伍</h1>
+            <p>队伍介绍以及主要期望,队伍介绍以及主要期望,队伍介绍以及主要期望,队伍介绍以及主要期望,队伍介绍以及主要期望,</p><br>
+            <h1>队员介绍</h1>
+            <p>队伍介绍以及主要期望,队伍介绍以及主要期望,队伍介绍以及主要期望,队伍介绍以及主要期望,队伍介绍以及主要期望,队伍介绍以及主要期望,队伍介绍以及主要期望,队伍介绍以及主要期望,队伍介绍以及主要期望,队伍介绍以及主要期望,
+            </p>
+        </div>
+        <div class="right">
+            <ul>
+                <li><img src="星空.jpg" alt="星空" width="60px" height="60px" /></li>
+                <li><img src="星空.jpg" alt="星空" width="60px" height="60px" /></li>
+                <li><img src="星空.jpg" alt="星空" width="60px" height="60px" /></li>
+            </ul>
+        </div>
     </div>
-    
-    <div class="right">
-        <ul>
-            <li><img src="星空.jpg" alt="星空" width="60px" height="60px" /></li>
-            <li><img src="星空.jpg" alt="星空" width="60px" height="60px" /></li>
-            <li><img src="星空.jpg" alt="星空" width="60px" height="60px" /></li>
-        </ul>
-    </div></div>
 </body>
 
 </html>

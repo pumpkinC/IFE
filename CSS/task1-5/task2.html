@@ -6,11 +6,33 @@
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <meta http-equiv="X-UA-Compatible" content="ie=edge">
        <title>task2</title>
+
        <style type="text/css">
               * {
+                     padding: 0px;
+                     margin: 5px;
+                     border: 1;
+              }
+
+              .header {
+                     width: 100%;
+                     height: 50px;
+                     background-color: black;
+                     color: white;
+              }
+
+              .header li {
+                     float: right;
                      padding: 20px;
-                     margin: 20px;
-                     border: 0.5
+              }
+
+              .footer {
+                     width: 100%;
+                     height: 50px;
+                     background-color: black;
+                     color: white;
+                     text-align: center;
+                     margin-top: 20px;
               }
 
               .box {
@@ -20,7 +42,7 @@
                      border-top-color: white;
                      border-right-color: darkgrey;
                      border-bottom-color: darkgray;
-                     margin: 10px auto;
+                     margin: 0px auto;
               }
 
               .d1 {
@@ -49,6 +71,15 @@
 </head>
 
 <body style="background:lightgrey">
+       <div class="header">
+              <img src="星空.jpg" alt="星空" width="30px" height="30px" style="float:left;padding: 0px;" />
+              <ul style="list-style-type: none">
+                     <li>链接4</li>
+                     <li>链接3</li>
+                     <li>链接2</li>
+                     <li>链接1</li>
+              </ul>
+       </div>
        <div class="box">
               <div class="d1">
                      <h1><b>文章一</b></h1>
@@ -205,14 +236,18 @@
                             <input type="checkbox" name="爱好" value="艺术">艺术
                             <input type="checkbox" name="爱好" value="科学">科学
                      </form>
-                     <br><textarea cols="90" rows="30">
+                     <br><textarea cols="30" rows="10">
   这是一个多行输入框
                             </textarea> <br>
-                     <form>
+                     <form style="background-color:aqua;width:100%;text-align: center;">
                             <input type="button" value="确认提交!">
                      </form>
 
               </div>
+       </div>
+       <div class="footer">
+              版权所有©也罢
+
        </div>
 
 
