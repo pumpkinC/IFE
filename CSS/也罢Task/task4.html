@@ -2,40 +2,56 @@
 <html>
 
 <head>
+
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>task4</title>
     <style>
         * {
             margin: 0 auto;
             padding: 0;
-            top:50%;
+            height: 100%;
+            width: 100%;
+
         }
+
 
         #square {
             height: 200px;
             width: 400px;
-            margin: 0 auto;
-            position: relative;
-            top: 150px;
-            left:80px;
+            top: 50%;
             overflow: hidden;
             background-color: grey;
         }
 
+        #item {
+            position: absolute;
+            margin: 0 auto;
+            left: 0;
+            top: 50%;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+
+        }
+
         #rb {
-            width: 100px;
+            width: 50px;
             height: 50px;
             position: relative;
             background-color: yellow;
             border-top-left-radius: 50px;
-            right: -200px;
-            top:150px;
+            right: -175px;
+            top: -50px;
+            
         }
 
         #lt {
-            width: 100px;
-            height: 100px;
-            left: -200px;
-            top: -100px;
+            width: 50px;
+            height:50px;
+            left: -175px;
+            top:-250px;
             position: relative;
             background-color: yellow;
             border-bottom-right-radius: 50px;
@@ -44,7 +60,8 @@
 </head>
 
 <body>
-    <div id="square">
+    <div id="item">
+        <div id="square"></div>
         <div id="rb"></div>
         <div id="lt"></div>
     </div>
